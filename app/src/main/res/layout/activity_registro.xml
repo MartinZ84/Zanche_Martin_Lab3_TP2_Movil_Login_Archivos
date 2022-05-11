@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.registro.RegistroActivity"
+>
+
+
+    <TextView
+    android:id="@+id/tvContraseña"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:text="Contraseña"
+
+
+    android:textSize="20sp"
+    app:layout_constraintBottom_toTopOf="@+id/etContraseñaPerfil"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etEmailPerfil" />
+
+<TextView
+    android:id="@+id/tvEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Email"
+
+
+
+    android:textSize="20sp"
+
+    app:layout_constraintBottom_toTopOf="@+id/etEmailPerfil"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etApellidoPerfil"
+    app:layout_constraintVertical_bias="0.0" />
+
+<TextView
+    android:id="@+id/tvApellido"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:text="Apellido"
+
+
+
+    android:textSize="20sp"
+    app:layout_constraintBottom_toTopOf="@+id/etApellidoPerfil"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etNombrePerfil" />
+
+<EditText
+    android:id="@+id/etDniPerfil"
+    android:layout_width="338dp"
+    android:layout_height="54dp"
+    android:layout_marginTop="40dp"
+
+    android:ems="10"
+
+    android:hint="Dni"
+    android:inputType="textPersonName"
+    android:textAlignment="center"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.479"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/etNombrePerfil"
+    android:layout_width="338dp"
+    android:layout_height="54dp"
+    android:layout_marginTop="28dp"
+
+    android:ems="10"
+
+    android:hint="Nombre"
+    android:inputType="textPersonName"
+    android:textAlignment="center"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.506"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etDniPerfil" />
+
+<EditText
+    android:id="@+id/etApellidoPerfil"
+    android:layout_width="338dp"
+    android:layout_height="54dp"
+    android:layout_marginTop="28dp"
+
+    android:ems="10"
+
+    android:hint="Apellido"
+    android:inputType="textPersonName"
+    android:textAlignment="center"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etNombrePerfil" />
+
+<EditText
+    android:id="@+id/etEmailPerfil"
+    android:layout_width="338dp"
+    android:layout_height="54dp"
+    android:layout_marginTop="28dp"
+
+    android:ems="10"
+
+    android:hint="Email"
+    android:inputType="textPersonName"
+    android:textAlignment="center"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.506"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etApellidoPerfil" />
+
+    <EditText
+    android:id="@+id/etContraseñaPerfil"
+    android:layout_width="337dp"
+    android:layout_height="53dp"
+    android:layout_marginTop="28dp"
+    android:ems="10"
+    android:hint="Contraseña"
+    android:inputType="textPassword"
+
+
+
+    android:textAlignment="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.486"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etEmailPerfil" />
+
+    <Button
+        android:id="@+id/btGuardarPerfil"
+        android:layout_width="201dp"
+        android:layout_height="59dp"
+        android:text="Guardar"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContraseñaPerfil" />
+
+<TextView
+    android:id="@+id/tvDni"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DNI"
+
+    android:textSize="20sp"
+    app:layout_constraintBottom_toTopOf="@+id/etDniPerfil"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0" />
+
+<TextView
+    android:id="@+id/tvNombre"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nombre"
+
+
+    android:textSize="20sp"
+    app:layout_constraintBottom_toTopOf="@+id/etNombrePerfil"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etDniPerfil"
+    app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
